@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Team Apex Gaming — competitive gaming, creators and the #TAGonTop mindset.">
+    <title>Team Apex Gaming | #TAGonTop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="noise"></div>
+
+    <header class="navbar" id="navbar">
+        <a class="brand" href="#home" aria-label="Team Apex Gaming home">
+            <img src="images/logo.svg" alt="Team Apex Gaming logo" style="height: 100px; width: auto;">
+        </a>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#teams">Teams</a>
+            <a href="#players">Players</a>
+            <a href="#content">Content</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <a class="nav-cta" href="#players">View Roster <span>↗</span></a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section class="hero" id="home">
+            <div class="hero-bg"></div>
+            <div class="hero-grid"></div>
+
+            <div class="hero-content">
+                <p class="eyebrow"><span></span> TEAM APEX GAMING</p>
+                <h1>WE START AT<br><em>THE TOP.</em></h1>
+                <p class="hero-copy">
+                    Built to compete. Driven to go beyond.
+                    Welcome to Team Apex Gaming.
+                </p>
+
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="#players">Meet The Roster <span>↗</span></a>
+                    <a class="btn btn-ghost" href="#content">Watch Content <span>▶</span></a>
+                </div>
+
+                <div class="hero-meta">
+                    <div><strong>01</strong><span>ESPORTS ORG</span></div>
+                    <div><strong>BGMI</strong><span>COMPETITIVE TEAM</span></div>
+                    <div><strong>#TAG</strong><span>ON TOP</span></div>
+                </div>
+            </div>
+
+            <div class="hero-image-wrap">
+                <img src="images/roster.webp" alt="Team Apex Gaming BGMI roster">
+                <div class="image-fade"></div>
+                <div class="hero-stamp">#TAG<br><span>ON TOP</span></div>
+            </div>
+
+            <div class="scroll-hint">SCROLL <span>↓</span></div>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="section about" id="about">
+            <div class="section-label">01 / ABOUT</div>
+            <div class="about-layout">
+                <div>
+                    <p class="eyebrow orange">THE APEX MINDSET</p>
+                    <h2>MORE THAN<br><span>A TEAM.</span></h2>
+                </div>
+                <div class="about-copy">
+                    <p>
+                        Team Apex Gaming is built around competition, personality and the
+                        ambition to keep pushing higher. From the battleground to the content
+                        we create, everything carries one mindset: <strong>#TAGonTop.</strong>
+                    </p>
+                    <a href="#teams" class="text-link">Explore Team Apex <span>↗</span></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- TEAMS -->
+        <section class="section teams" id="teams">
+            <div class="section-heading">
+                <div>
+                    <div class="section-label">02 / TEAMS</div>
+                    <h2>BUILT TO <span>COMPETE.</span></h2>
+                </div>
+                <p>Two championship disciplines. One standard.<br>Always pushing beyond.</p>
+            </div>
+
+            <div class="teams-container">
+                <!-- BGMI TEAM -->
+                <article class="team-feature">
+                    <div class="team-number">01</div>
+                    <div class="team-info">
+                        <p class="eyebrow orange">CURRENT ROSTER</p>
+                        <h3>BGMI</h3>
+                        <p>Competitive mobile battle royale at the heart of Team Apex Gaming.</p>
+                        <a href="#players" class="btn btn-small" data-select-roster="bgmi">View BGMI Roster
+                            <span>↗</span></a>
+                    </div>
+                    <div class="team-art">
+                        <img src="images/roster.webp" alt="Team Apex Gaming BGMI team">
+                        <div class="team-art-overlay"></div>
+                    </div>
+                </article>
+
+                <!-- FREE FIRE TEAM -->
+                <article class="team-feature team-freefire">
+                    <div class="team-number">02</div>
+                    <div class="team-info">
+                        <p class="eyebrow orange">COMPETITIVE LINEUP</p>
+                        <h3>FREE FIRE</h3>
+                        <p>High-octane aggression, relentless pressure, and championship firepower.</p>
+                        <a href="#players" class="btn btn-small" data-select-roster="freefire">View Free Fire Roster
+                            <span>↗</span></a>
+                    </div>
+                    <div class="team-art">
+                        <img src="images/ff.jpg" alt="Team Apex Gaming Free Fire team">
+                        <div class="team-art-overlay"></div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- PLAYERS -->
+        <section class="section players" id="players">
+            <div class="section-heading">
+                <div>
+                    <div class="section-label">03 / ROSTER</div>
+                    <h2>MEET THE <span>APEX.</span></h2>
+                </div>
+                <p>BGMI & Free Fire Rosters<br>Team Apex Gaming</p>
+            </div>
+
+            <!-- ROSTER TABS -->
+            <div class="roster-filter-bar">
+                <button class="roster-tab active" data-roster="all">ALL ROSTERS (10)</button>
+                <button class="roster-tab" data-roster="bgmi">BGMI (5)</button>
+                <button class="roster-tab" data-roster="freefire">FREE FIRE (5)</button>
+            </div>
+
+            <div class="player-grid">
+                <!-- BGMI LINEUP (5 PLAYERS) -->
+                <article class="player-card featured" data-game="bgmi">
+                    <div class="player-index">01</div>
+                    <div class="game-badge bgmi">BGMI</div>
+                    <div class="player-image">
+                        <img src="images/jonathan.jpg" alt="Jonathan Gaming" loading="lazy">
+                    </div>
+                    <div class="player-info">
+                        <span>OWNER</span>
+                        <h3>Jonathan Gaming</h3>
+                        <p>BGMI • Team Apex Gaming</p>
+                    </div>
+                </article>
+
+                <article class="player-card" data-game="bgmi">
+                    <div class="player-index">02</div>
+                    <div class="game-badge bgmi">BGMI</div>
+                    <div class="player-image">
+                        <img src="images/harsha.jpg" alt="TAG Harsh" loading="lazy">
+                    </div>
+                    <div class="player-info">
+                        <span>Assaulter</span>
+                        <h3>TAG Harsh</h3>
+                        <p>BGMI • Team Apex Gaming</p>
+                    </div>
+                </article>
+
+                <article class="player-card" data-game="bgmi">
+                    <div class="player-index">03</div>
+                    <div class="game-badge bgmi">BGMI</div>
+                    <div class="player-image">
+                        <img src="images/jelly.jpg" alt="TAG Jelly" loading="lazy">
+                    </div>
+                    <div class="player-info">
+                        <span>IGL</span>
+                        <h3>TAG Jelly</h3>
+                        <p>BGMI • Team Apex Gaming</p>
+                    </div>
+                </article>
+
+                <article class="player-card" data-game="bgmi">
+                    <div class="player-index">04</div>
+                    <div class="game-badge bgmi">BGMI</div>
+                    <div class="player-image">
+                        <img src="images/kio.jpg" alt="TAG Kiolamoo" loading="lazy">
+                    </div>
+                    <div class="player-info">
+                        <span>Assaulter</span>
+                        <h3>TAG Kiolamoo</h3>
+                        <p>BGMI • Team Apex Gaming</p>
+                    </div>
+                </article>
+
+                <article class="player-card" data-game="bgmi">
+                    <div class="player-index">05</div>
+                    <div class="game-badge bgmi">BGMI</div>
+                    <div class="player-image">
+                        <img src="images/hydro.jpg" alt="TAG Hydro" loading="lazy">
+                    </div>
+                    <div class="player-info">
+                        <span>Assaulter</span>
+                        <h3>TAG Hydro</h3>
+                        <p>BGMI • Team Apex Gaming</p>
+                    </div>
+                </article>
+
+                <!-- FREE FIRE LINEUP (5 PLAYERS) -->
+                <article class="player-card freefire-card" data-game="freefire">
+                    <div class="player-index">01</div>
+                    <div class="game-badge freefire">FREE FIRE</div>
+                    <div class="player-image">
+                        <img src="images/kd.jpg" alt="Tag KD" loading="lazy">
+                    </div>
+                    <div class="player-info">
+                        <span>IGL / Assaulter</span>
+                        <h3>Tag KD</h3>
+                        <p>Free Fire • Team Apex Gaming</p>
+                    </div>
+                </article>
+
+                <article class="player-card freefire-card" data-game="freefire">
+                    <div class="player-index">02</div>
+                    <div class="game-badge freefire">FREE FIRE</div>
+                    <div class="player-image">
+                        <img src="images/louis.jpg" alt="TAG Louis" loading="lazy">
+                    </div>
+                    <div class="player-info">
+                        <span>Assaulter</span>
+                        <h3>TAG Louis</h3>
+                        <p>Free Fire • Team Apex Gaming</p>
+                    </div>
+                </article>
+
+                <article class="player-card freefire-card" data-game="freefire">
+                    <div class="player-index">03</div>
+                    <div class="game-badge freefire">FREE FIRE</div>
+                    <div class="player-image">
+                        <img src="images/shotoff.jpg" alt="TAG Shoto" loading="lazy">
+                    </div>
+                    <div class="player-info">
+                        <span>Sniper</span>
+                        <h3>TAG Shoto</h3>
+                        <p>Free Fire • Team Apex Gaming</p>
+                    </div>
+                </article>
+
+                <article class="player-card freefire-card" data-game="freefire">
+                    <div class="player-index">04</div>
+                    <div class="game-badge freefire">FREE FIRE</div>
+                    <div class="player-image">
+                        <img src="images/sahil.jpg" alt="TAG Sahil" loading="lazy">
+                    </div>
+                    <div class="player-info">
+                        <span>Support</span>
+                        <h3>TAG Sahil</h3>
+                        <p>Free Fire • Team Apex Gaming</p>
+                    </div>
+                </article>
+
+                <article class="player-card freefire-card" data-game="freefire">
+                    <div class="player-index">05</div>
+                    <div class="game-badge freefire">FREE FIRE</div>
+                    <div class="player-image">
+                        <img src="images/Wolvin.jpg" alt="TAG Wolvin" loading="lazy">
+                    </div>
+                    <div class="player-info">
+                        <span>Rusher</span>
+                        <h3>TAG Wolvin</h3>
+                        <p>Free Fire • Team Apex Gaming</p>
+                    </div>
+                </article>
+            </div>
+
+            <p class="roster-note">
+                Official competitive rosters representing Team Apex Gaming across BGMI and Free Fire.
+            </p>
+        </section>
+
+        <!-- CONTENT & CREATORS -->
+        <section class="section content-section" id="content">
+            <div class="section-heading">
+                <div>
+                    <div class="section-label">04 / OWNERS & DIRECTORS</div>
+                    <h2>THE MINDS BEHIND <span>APEX.</span></h2>
+                </div>
+                <p>Leadership, visionary minds<br>& elite management team.</p>
+            </div>
+
+            <!-- OWNER SPOTLIGHT -->
+            <div class="content-group-title">
+                <span class="group-eyebrow orange">ORGANIZATION OWNER</span>
+                <h3>FOUNDER & OWNER</h3>
+            </div>
+
+            <article class="creator-card leadership-card owner-card">
+                <div class="creator-badge">FOUNDER & OWNER</div>
+                <div class="creator-image">
+                    <img src="images/ownerjonny.jpg" alt="Jonathan Gaming" loading="lazy">
+                </div>
+                <div class="creator-info">
+                    <span class="creator-role">OWNER // ICON</span>
+                    <h3>Jonathan Gaming</h3>
+                    <p class="creator-bio">Pioneer of Indian mobile esports, apex creator, and the driving soul
+                        behind Team Apex Gaming.</p>
+                    <div class="creator-meta">
+                        <span class="meta-stat"><strong>8M+</strong> YouTube</span>
+                        <span class="meta-stat"><strong>4.4M+</strong> Instagram</span>
+                        <span class="meta-stat"><strong>Founder</strong> Team Apex Gaming</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 5 LEADERSHIP & DIRECTORS PROFILE CARDS -->
+            <div class="content-group-title content-management-title">
+                <span class="group-eyebrow orange">DIRECTORS & STAFF</span>
+                <h3>MANAGEMENT & COACHING</h3>
+            </div>
+
+            <div class="management-grid">
+                <!-- CARD 1: Madhur Agrawal — Co-Founder -->
+                <article class="player-card leadership-profile-card">
+                    <div class="player-image">
+                        <img src="images/madhur.jpg" alt="Madhur Agrawal" loading="lazy">
+                    </div>
+                    <div class="player-info">
+                        <span class="leadership-role-badge">Co-Founder</span>
+                        <h3>Madhur Agrawal</h3>
+                        <p>Team Apex Gaming</p>
+                    </div>
+                </article>
+
+                <!-- CARD 2: Shreeman Legend — Founding Member -->
+                <article class="player-card leadership-profile-card">
+                    <div class="player-image">
+                        <img src="images/shreeman.jpg" alt="Shreeman Legend" loading="lazy">
+                    </div>
+                    <div class="player-info">
+                        <span class="leadership-role-badge">Founding Member</span>
+                        <h3>Shreeman Legend</h3>
+                        <p>Team Apex Gaming</p>
+                    </div>
+                </article>
+
+                <!-- CARD 3: ssr  -->
+                <article class="player-card leadership-profile-card">
+                    <div class="player-image">
+                        <img src="images/ssr.jpg" alt="ssr" loading="lazy">
+                    </div>
+                    <div class="player-info">
+                        <span class="leadership-role-badge">management Member</span>
+                        <h3>ssr</h3>
+                        <p>Team Apex Gaming</p>
+                    </div>
+                </article>
+
+                <!-- CARD 4: KiLLeR BaBa — General Manager -->
+                <article class="player-card leadership-profile-card">
+                    <div class="player-image">
+                        <img src="images/killerbaba.jpg" alt="KiLLeR BaBa" loading="lazy">
+                    </div>
+                    <div class="player-info">
+                        <span class="leadership-role-badge">General Manager</span>
+                        <h3>KiLLeR BaBa</h3>
+                        <p>Team Apex Gaming</p>
+                    </div>
+                </article>
+            </div>
+
+            <!-- CONTENT CREATORS (5 CARDS) -->
+            <div class="content-group-title content-creators-title">
+                <span class="group-eyebrow orange">TALENT NETWORK</span>
+                <h3>CONTENT CREATORS</h3>
+            </div>
+
+            <div class="creators-grid">
+                <article class="creator-card talent-card">
+                    <div class="creator-index">01</div>
+                    <div class="creator-image">
+                        <img src="images/lolz.jpg" alt="Lolzzz Gaming" loading="lazy">
+                    </div>
+                    <div class="creator-info">
+                        <span class="creator-role">CREATOR // STREAMER</span>
+                        <h3>Lolzzz Gaming</h3>
+                        <p class="creator-category">BGMI & Variety Streaming</p>
+                        <div class="creator-followers">
+                            <span>YouTube Gaming</span>
+
+                        </div>
+                    </div>
+                </article>
+
+                <article class="creator-card talent-card">
+                    <div class="creator-index">02</div>
+                    <div class="creator-image">
+                        <img src="images/sharkshe.jpg" alt="Sharkshe" loading="lazy">
+                    </div>
+                    <div class="creator-info">
+                        <span class="creator-role">CREATOR // GAMER</span>
+                        <h3>Sharkshe</h3>
+                        <p class="creator-category"> Gaming & Lifestyle</p>
+                        <div class="creator-followers">
+                            <span>Instagram & YT</span>
+
+                        </div>
+                    </div>
+                </article>
+
+                <article class="creator-card talent-card">
+                    <div class="creator-index">03</div>
+                    <div class="creator-image">
+                        <img src="images/rakazon.jpg" alt="Rakazone" loading="lazy">
+                    </div>
+                    <div class="creator-info">
+                        <span class="creator-role">STREAMER</span>
+                        <h3>TAG Rakazone</h3>
+                        <p class="creator-category">BGMI & Variety Streaming</p>
+                        <div class="creator-followers">
+                            <span>YouTube Gaming</span>
+
+                        </div>
+                    </div>
+                </article>
+
+                <!-- <article class="creator-card talent-card">
+                    <div class="creator-index">04</div>
+                    <div class="creator-graphic talent-graphic">
+                        <div class="talent-avatar-initials">VK</div>
+                        <div class="talent-platform-icon">▶</div>
+                    </div>
+                    <div class="creator-info">
+                        <span class="creator-role">CASTER & STREAMER</span>
+                        <h3>TAG Valkyrie</h3>
+                        <p class="creator-category">Tournaments & Watch Parties</p>
+                        <div class="creator-followers">
+                            <span>Live Streamer</span>
+
+                        </div>
+                    </div>
+                </article> -->
+
+                <!-- <article class="creator-card talent-card">
+                    <div class="creator-index">05</div>
+                    <div class="creator-graphic talent-graphic">
+                        <div class="talent-avatar-initials">RN</div>
+                        <div class="talent-platform-icon">▶</div>
+                    </div>
+                    <div class="creator-info">
+                        <span class="creator-role">CREATOR</span>
+                        <h3>TAG Ronin</h3>
+                        <p class="creator-category">Gameplay Guides & Montages</p>
+                        <div class="creator-followers">
+                            <span>Short-form & Shorts</span>
+
+                        </div>
+                    </div>
+                </article> -->
+            </div>
+
+            <!-- OFFICIAL BROADCAST PLATFORMS -->
+            <div class="content-group-title channels-title">
+                <span class="group-eyebrow orange">CHANNELS</span>
+                <h3>OFFICIAL PLATFORMS</h3>
+            </div>
+
+            <div class="content-grid">
+                <a class="social-card youtube" href="https://youtube.com/@team.apexgaming" target="_blank"
+                    rel="noopener noreferrer">
+                    <div class="social-icon">▶</div>
+                    <div>
+                        <small>WATCH ON</small>
+                        <h3>YouTube</h3>
+                        <p>Team Apex Gaming</p>
+                    </div>
+                    <span class="card-arrow">↗</span>
+                </a>
+
+                <a class="social-card instagram" href="https://www.instagram.com/team.apexgaming/" target="_blank"
+                    rel="noopener noreferrer">
+                    <div class="social-icon">◎</div>
+                    <div>
+                        <small>FOLLOW ON</small>
+                        <h3>Instagram</h3>
+                        <p>@team.apexgaming</p>
+                    </div>
+                    <span class="card-arrow">↗</span>
+                </a>
+
+                <a class="social-card x-social" href="https://x.com/team.apex.gaming" target="_blank"
+                    rel="noopener noreferrer">
+                    <div class="social-icon">𝕏</div>
+                    <div>
+                        <small>FOLLOW ON</small>
+                        <h3>X / Twitter</h3>
+                        <p>team.apex.gaming</p>
+                    </div>
+                    <span class="card-arrow">↗</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="contact" id="contact">
+            <div class="contact-inner">
+                <p class="eyebrow orange">READY FOR THE NEXT LEVEL?</p>
+                <h2>LET'S GO<br><span>#TAGONTOP.</span></h2>
+                <p>Follow Team Apex Gaming and stay connected with the squad.</p>
+
+                <div class="contact-actions">
+                    <a class="btn btn-primary" href="https://teamapex.gg/" target="_blank" rel="noopener noreferrer">
+                        Visit Team Apex <span>↗</span>
+                    </a>
+                    <a class="btn btn-ghost" href="https://youtube.com/@team.apexgaming" target="_blank"
+                        rel="noopener noreferrer">
+                        YouTube <span>↗</span>
+                    </a>
+                </div>
+            </div>
+            <div class="contact-mark">TAG</div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-top">
+            <a href="#home" class="footer-brand">
+                <img src="images/logo.svg" alt="Team Apex Gaming">
+            </a>
+            <p>#TAGonTOP</p>
+            <div class="footer-links">
+                <a href="#about">About</a>
+                <a href="#teams">Teams</a>
+                <a href="#players">Players</a>
+                <a href="#content">Content</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 Team Apex Gaming. All rights reserved.</span>
+            <span>WE START AT THE TOP AND GO BEYOND.</span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
